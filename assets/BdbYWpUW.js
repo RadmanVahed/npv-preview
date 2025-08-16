@@ -1,0 +1,1 @@
+import{_ as t}from"./DFo9ps3T.js";import{_ as c,c as n,o as s,b as o}from"./BArMl6dj.js";import"./CnkSAEqu.js";import"./NEPKO74g.js";const _={},r={class:"flex flex-col gap-2"};function a(m,p){const e=t;return s(),n("div",r,[o(e),o(e)])}const u=c(_,[["render",a]]);export{u as default};
