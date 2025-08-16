@@ -1,19 +1,11 @@
 <template>
-    <div class="flex justify-between items-center rtl my-4">
-        <h1 class="text-xl">درخواست ها</h1>
-        <div>
-            <UButton icon="i-lucide-home" size="xl" variant="ghost" to="/" color="neutral"/>
-        </div>
-    </div>
     <div class="border rtl flex flex-col gap-4 border-[var(--ui-border)] rounded-lg p-2">
         <div>
             <div class="flex justify-between">
                 <h1>
                     جزییات درخواست بار
                 </h1>
-                <div>
-                    1404/05/25
-                </div>
+                <UIcon name="i-lucide-x" class="text-red-500 text-lgS" />
             </div>
             <div class="flex gap-2 mt-4">
                 <UBadge variant="soft" label="بسته بندی وکیوم" />
@@ -30,17 +22,14 @@
             <p class="w-full">مبلغ پرداختی:</p>
             <div class="h-auto border border-[var(--ui-border)]"></div>
             <span class="w-full flex justify-center">{{ splitNumber(12000000) }} تومان</span>
+
         </div>
-        <UButton label="مشاهده" block color="warning" variant="soft" />
     </div>
 </template>
 
 <script setup lang="ts">
 import type { TimelineItem } from '@nuxt/ui'
 import { splitNumber } from '@/utils/UNumber'
-definePageMeta({
-    layout: 'auth'
-})
 const items = ref<TimelineItem[]>([
     {
         title: 'اصفهان - اصفهان',
